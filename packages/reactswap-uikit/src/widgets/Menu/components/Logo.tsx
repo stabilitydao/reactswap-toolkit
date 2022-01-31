@@ -23,6 +23,7 @@ const StyledLink = styled("a")`
       display: none;
     }
   }
+  
   .desktop-icon {
     width: 160px;
     display: none;
@@ -41,6 +42,19 @@ const StyledLink = styled("a")`
       animation-iteration-count: 1;
     }
   }
+  
+  img {
+    width: 36px;
+    height: 36px
+  }
+  
+  div {
+    margin-left: 6px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  color: ${({ theme }) => theme.colors.text};
+ 
 `;
 
 const Logo: React.FC<Props> = ({ isDark, href }) => {
@@ -48,22 +62,18 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
+      <img src="/logo.png" alt="ReactSwap" />
+      <div>ReactSwap</div>
+      {/*<LogoIcon className="mobile-icon" />*/}
+      {/*<LogoWithTextIcon className="desktop-icon" isDark={isDark} />*/}
     </>
   );
 
   return (
     <Flex>
-      {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
-          {innerLogo}
-        </StyledLink>
-      ) : (
-        <StyledLink href={href} as={linkComponent} aria-label="Pancake home page">
-          {innerLogo}
-        </StyledLink>
-      )}
+      <StyledLink href={href} as={linkComponent} aria-label="Pancake home page">
+        {innerLogo}
+      </StyledLink>
     </Flex>
   );
 };

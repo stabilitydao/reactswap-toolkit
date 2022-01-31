@@ -2,7 +2,7 @@
  * @see https://github.com/pancakeswap/pancake-frontend/blob/develop/src/config/constants/tokens.ts
  */
 const tokens = {
-  cake: {
+/*  cake: {
     symbol: "CAKE",
     address: {
       56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
@@ -1540,7 +1540,7 @@ const tokens = {
     },
     decimals: 9,
     projectLink: "https://www.ampleforth.org/",
-  },
+  },*/
 };
 
 export default tokens;

@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap/uikit",
-  "version": "0.63.1",
-  "description": "Set of UI components for pancake projects",
+  "name": "@reactswap/uikit",
+  "version": "1.0.9",
+  "description": "Set of UI components for ReactSwap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+  "repository": "https://github.com/stabilitydao/reactswap-toolkit/tree/master/packages/reactswap-uikit",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
