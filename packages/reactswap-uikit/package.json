@@ -1,6 +1,6 @@
 {
   "name": "@reactswap/uikit",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Set of UI components for ReactSwap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
